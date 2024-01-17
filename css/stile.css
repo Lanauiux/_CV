@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-bg {
+  background-image: url("../img/Rectangle\ 1.png");
+ background-size:cover;
+  font-family: 'Montserrat', sans-serif;
+  
+  font-size: 16px;
+}
+@font-face{
+  font-family: "Qestero", serif;
+  scr: url("font/шрифтqestero-exotic-display-font-2023-03-21-18-27-13-utc/QESTERO-Regular-SVG.ttf") format("woff"),
+  url("font/шрифтqestero-exotic-display-font-2023-03-21-18-27-13-utc/QESTERO-Regular-SVG.ttf") format("woff2"),url("font/шрифтqestero-exotic-display-font-2023-03-21-18-27-13-utc/QESTERO-Regular-SVG.ttf") format("woff");
+font-style:normal ;
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: "Montserrat", sans-serif;
+  scr: url("font/шрифтqestero-exotic-display-font-2023-03-21-18-27-13-utc/QESTERO-Regular-SVG.ttf") format("woff"),
+  url("font/шрифтqestero-exotic-display-font-2023-03-21-18-27-13-utc/QESTERO-Regular-SVG.ttf") format("woff2"),url("font/шрифтqestero-exotic-display-font-2023-03-21-18-27-13-utc/QESTERO-Regular-SVG.ttf") format("woff");
+font-style:normal ;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "Montserrat", sans-serif;
+  scr: url("font/шрифтqestero-exotic-display-font-2023-03-21-18-27-13-utc/Philosopher-Bold.ttf") format("woff"),
+  url("font/шрифтqestero-exotic-display-font-2023-03-21-18-27-13-utc/Philosopher-Bold.ttf") format("woff2"),url("font/шрифтqestero-exotic-display-font-2023-03-21-18-27-13-utc/Philosopher-Bold.ttf") format("woff");
+font-style:normal ;
+  font-weight: normal;
+}
+
+.img-thumbnail {
+  border:1px
+
+}
+
+ .p{
+  font-family: 'Montserrat', sans-serif;;
+ } 
+
+
+/* расположение ссылки на русскояз страницу */
+.LinkRU,
+.LinkEN{ 
+ position: fixed;
+  top: 25px;
+  right: 0;
+  z-index: 100;
+}
+.LinkRU a,
+.LinkEN a{
+  font-size: 12px;
+  font-weight: bold;
+  color: #a7a3a3;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+  border-radius: 4px;
+  /* border: 1px solid #fff; */
+  transition: 0.5s;
+  background-color:rgb(124, 122, 118)
+  
+}
+.LinkRU a:hover,
+.LinkEN a:hover{
+  color: #f7e3a4;
+}
+
+.full-screen{
+  position: relative;
+  /* во весь экран
+   */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* растянуть по первому экрану */
+.full-screen__video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* текст Lana UI/UX перед видео */
+/* z-index чем больше число,тем ближе, типа как слои и работаю толь с position  */
+.full-screen__body{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px 15px;
+}
+
+.full-screen__title{
+  /* жеско задан */
+  /* font-size: 5rem; calc- мини размер шрифта+макс*на 100%ширину экрана/размер экрана в средней своей части
+  */
+  font-size: calc(14px + 45*100vw/1024) ;
+  font-weight: bold;
+ color: #e0e0e0;
+  /* background-color: #c09e2c;
+  background: linear-gradient(180deg, rgba(135,86,3,1) 0%, rgba(198,160,13,1) 23%, rgba(233,222,124,0.8645833333333334) 48%, rgba(110,77,19,1) 68%);-webkit-background-clip: text; -webkit-text-fill-color: transparent; */
+
+  text-transform: uppercase;
+  /* mежбуквенный интервал */
+  letter-spacing: 8px;
+}
+
+.full-screen__text{
+  /* жеско задан */
+  /* font-size: 2rem; */
+  font-size: calc(10px + 18*100vw/1024);
+  font-weight: normal;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.color-grey {
+  color: #134d26;
+  
+}
+.text-center{
+  color: #134d26;
+}
+.job-title{
+
+  font-weight: 550;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.cv-header,
+.profile,
+.experience,
+
+.company-name {
+  font-family: "Qestero", serif;
+  scr: url("font/шрифтqestero-exotic-display-font-2023-03-21-18-27-13-utc/QESTERO-Regular-SVG.ttf")
+  font-weight: bold;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.my_h2{
+  font-family: sans-serif;
+  font-family: Montserrat;
+  font-weight: 400;
+  
+}
+.my_h1{
+  font-family:"Qestero", serif;
+  scr: url("font/шрифтqestero-exotic-display-font-2023-03-21-18-27-13-utc/QESTERO-Regular-SVG.ttf")
+  
+}
+
+.my_h_ru{
+font-family
+}
+
+.my_h3{
+  font-size: 20px;
+
+  color:#134d26
+ 
+}
+
+.cv {
+  
+  /* border: 1px solid #585858;
+  border-radius:16px */
+  box-shadow: 4px 4px 10px #000;
+  
+}
+
+.cv-left {
+  background-color: #2a302c;
+  min-height: 30vh;
+  color: #fff;
+  
+  
+}
+
+.cv-left a {
+  color: #fff;
+  
+}
+
+.cv-left a:hover {
+  text-decoration: none;
+}
+
+.cv-left ul {
+  line-height: 175%;
+  padding-left: 30px;
+  
+}
+
+.cv-left ul.contacts-block {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cv-left .address {
+  font-style: italic;
+}
+
+.photo-block {
+}
+
+
+
+.contacts-block{} 
+
+.logo{
+  margin-top: 14px;
+  margin-bottom: auto;
+}
+.cv-right {
+  background-color: #fff;
+  min-height: 30vh;
+  color: #131313;
+}
+
+article {
+  padding: 20px;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.company-name i {
+  font-size: 0.8rem;
+  font-family:Montserrat, sans-serif;
+  text-transform: none;
+}
+
+.job-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.lines {
+  overflow: hidden;
+}
+
+.lines::before,
+.lines::after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3px;
+  background-color: #4b4b4b;
+  border: 1px solid #fff;
+  vertical-align: middle;
+}
+
+.lines::before {
+  margin-left: -100%;
+}
+
+.lines::after {
+  margin-right: -100%;
+}
+
+@media (max-width: 991.98px) {
+  .cv-left h1,
+  .cv-left h2,
+  .cv-left h3,
+  .cv-left h4 {
+    font-size: 1.3rem;
+  }
+  .cv-left ul {
+    line-height: 150%;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  .cv {
+    margin-top: 0;
+  }
+
+  .photo-block img {
+    display: block;
+    max-width: 50%;
+    margin: 20px auto;
+  }
+}
+.card{
+  box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.1)
+  
+}
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5)
+} 
+.card-img-top{
+}
+.card{
+  margin: 32px;
+}
+.my_h5{
+  font-family: sans-serif;
+  font-family: Montserrat;
+  font-size: 18px;
+  letter-spacing:0.2px
+  color: #1e2420;
+  font-weight:600
+ 
+}
+.color{
+  color: #f7c00d;
+}
+.a_1{
+  position:center;
+  font-size: 16px;
+ 
+  
+  z-index: 50;
+}
+.a_1{
+  
+  
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px;
+  display: block;
+  border-radius: 4px;
+  /* border: 1px solid #fff; */
+  transition: 0.5s;
+  
+}
